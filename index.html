@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Portifólio Erick Miquelasso</title>
+</head>
+<body id="body">
+    <header>
+        <!--Botão principal de navegação-->
+            <span id="logoErick"><span id="erick">ERICK</span> <span id="miquelasso">MIQUELASSO</span></span>
+            <ul id="barraMenus">
+                <li id="inicio"><a href="#body">INICIO</a></li>
+                <li id= "lisobremim"><a href="#sessao1">SOBRE MIM</a></li>
+                <li id="liformacao"><a href="#sessao2">FORMAÇÃO</a></li>
+                <li id="liportifolio"><a href="#sessao3">PORTIFÓLIO</a></li>
+                <li id="licontato"><a href="#contato">CONTATO</a></li>
+            </ul>
+    </header>
+<!--Inicio do conteúdo do site-->
+    <main>
+        <!--SESSÃO SOBRE MIM-->
+        <section class="sessao" id="sessao1">
+            <div id="imagemFundo">
+            </div>
+            <div class=divsobreMim id="sobremimEsquerda">
+                <h1><span>OLÁ, EU SOU</span></br><span id="ericksessao1">ERICK.</span></h1>
+                <a href="#sessao3">Conheça meu Portifólio</a>
+            </div>
+            <div class="divsobreMim" id="sobremimCentro">
+            <h2>
+            Desenvolvedor
+            <br>
+            <span> em formação.</span>
+            </h2>
+
+            <p id="textosobremim">Olá! Meu nome é Erick e estou iniciando minha jornada no desenvolvimento web. Tenho interesse em tecnologia e programação e venho estudando para aprimorar minhas habilidades em HTML, CSS e JavaScript. Busco transformar ideias em páginas funcionais, organizadas e visualmente agradáveis, sempre aprendendo e evoluindo a cada projeto.</p>
+            </div>
+            <div class="divsobreMim">
+                <img src="assets/IMG_4478.png" id="foto">
+            </div>
+
+        </section>
+        <!--SESSÃO FORMAÇÃO -->
+        <section class="sessao" id="sessao2">
+            <div id="divFormacao1">
+                <span>FORMAÇÃO</span>
+            </div>
+    <div id="caixaLateral">     
+            <div id="caixa1" class="linhasFormacao">
+                <p>Formação técnica em <em>Enfermagem</em>(2023).</p>
+            </div>
+
+            <div id="caixa2" class="linhasFormacao">
+                <p>Graduando em <em>Análise e Desenvolvimento de Sistemas</em>(UNINTER).</p>
+            </div>
+
+            <div id="caixa3" class="linhasFormacao">
+                <p>Curso profissionalizante em <em>Web Design.</em></p>
+    </div>
+            </div>
+        </section>
+        <!--SESSÃO PORTIFÓLIO-->
+        <section class="sessao" id="sessao3">
+            <div id="imagensPortifolio">
+                <img id="imagemDestaque" src="assets/portifolio1.png" alt="Imagem em destaque">
+            </div>
+
+            <div id="portifolio">
+                <a href="https://github.com/DevErickMqlss">GitHub<img src="assets/GITHUBICON.png" height="30px"></a>
+            </div>
+        </section>
+        <!--SESSÃO CONTATO-->
+        <section id="contato" class="sessao">
+            <p>CONTATO</p>
+            <div>
+                <form class="formulario-contato">
+
+                    <label for="nome">Nome</label>
+                     <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                     <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+html{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-top: 65px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Google Sans Flex";
+}
+/*barra de menus*/
+header{
+    font-size: 15px;
+    letter-spacing: 3px;
+    background-color: black;
+    width: 100%;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+header span{
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#erick{
+    margin: 0;
+    padding: 0;
+    color: orange;
+}
+#miquelasso{
+    margin:0;
+    padding: 0;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-family: "Google Sans Flex";
+    font-size: 15px;
+    color: white;
+}
+
+header ul li a:hover{
+    color: orange;
+    text-decoration-line: underline;
+    text-underline-offset: 22px;
+    text-decoration-thickness: 3px;
+    transition: 0.3s;
+}
+
+/*inicio do conteudo*/
+main{
+    padding: 0;
+    margin: 0;
+}
+
+.sessao{
+    height: 550px;
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+    scroll-margin-top: 65px;
+}
+/*SOBRE MIM*/
+#sessao1{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.divsobreMim{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.divsobreMim:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.9s;
+}
+
+#imagemFundo{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background-image: url(assets/fundo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sessao1>div{
+    flex: 1;
+    z-index: 1;
+}
+
+#sobremimEsquerda{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#sobremimEsquerda h1{
+    position: absolute;
+    text-align: left;
+    margin-top: 50%;
+    color: black;
+    font-weight: normal;
+    font-size: 45px;
+    letter-spacing: 6px;
+}
+
+#ericksessao1{
+    color: orange;
+}
+
+
+#sobremimEsquerda a{
+    text-decoration:none;
+    color: orange;
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 300px;
+    bottom: 80px;
+    border: 1px, solid, orange;
+}
+
+#sobremimEsquerda a:hover{
+    color: white;
+    border-color: white;
+    transition: 0.3s;
+}
+
+#sobremimCentro{
+    padding: 30px;
+}
+
+#sobremimCentro h2{
+margin-top: 35px;
+color: black;
+font-size: 30px;
+font-weight: normal;
+letter-spacing: 4px;
+}
+
+#sobremimCentro h2 span{
+color: orange;
+}
+
+#textosobremim{
+    font-family: "Lato";
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+#foto{
+    width: 100%;
+    filter: grayscale(100%)
+}
+
+#foto:hover{
+    filter: grayscale(0%);
+    transition: 0.9s;
+}
+/*FORMAÇÃO*/
+#sessao2{
+    display: flex;
+}
+
+#divFormacao1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 250px;
+    background-color: orange;
+}
+
+#divFormacao1 span{
+    transform: rotate(-90deg);
+    font-family: "Google Sans Flex";
+    font-size: 100px;
+    color: rgb(218, 120, 1);
+    font-weight: thin;
+    letter-spacing: -1px;
+}
+
+#caixaLateral{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.linhasFormacao{
+flex: 1;
+padding: 0;
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: Google Sans Flex;
+color: white;
+background-color: rgb(14, 14, 14);
+}
+
+#caixa1 p{
+font-size: 20px;
+}
+
+#caixa1 em{
+    color:orange;
+    font-style: normal;
+}
+
+#caixa2{
+    background-color: black;  
+}
+
+#caixa2 p{
+    font-size: 35px;
+}
+
+#caixa2 em{
+    color: orange;
+    font-style: normal;
+}
+
+#caixa3 p{
+font-size: 25px;
+}
+
+#caixa3 em{
+    font-style: normal;
+    color: orange;
+}
+/*PORTIFOLIO*/
+#portifolio{
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    margin:0;
+    padding: 0;;
+    width: 100%;
+    height: 100%;
+}
+
+#portifolio a{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    position: absolute;
+    text-align: center;
+    margin-top: 5px;
+    width: 400px;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 30px;
+    background-color: orange;
+    z-index: 50;
+    border-radius: 6px;
+    border: solid, 1px, orange;
+}
+
+#portifolio a:hover{
+    color: orange;
+    background-color: black;
+    transition: 0.3s;
+}
+
+#portifolio a img{
+    margin-left: 10px;
+    margin-bottom: -4px;
+    filter: grayscale(100%);
+}
+
+#imagensPortifolio{
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 550px;
+    width: 700px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: white;
+    z-index: 49;
+
+}
+
+#imagemDestaque{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Controla o tempo da transição*/
+}
+
+#imagemDestaque.fade{
+    opacity: 0;
+}
+
+/*CONTATO*/
+#contato{
+padding: 0;
+height: auto;
+background-color: black;
+overflow: hidden;
+height: 550px;
+}
+
+#contato p{
+    display: flex;
+    width: 100%;
+    height: 85px;
+    background-color: orange;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    letter-spacing: 15px;
+    color: rgb(218, 120, 1);
+}
+
+/*formulario*/
+
+.formulario-contato {
+  width: 600px;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.formulario-contato label {
+  color: white;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 12px;
+
+  background-color: transparent;
+  color: white;
+  font: inherit;
+
+  border: 1px solid #777;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+  border-color: orange;
+}
+
+.formulario-contato textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formulario-contato button {
+  margin-top: 15px;
+  padding: 13px;
+
+  background-color: orange;
+  color: black;
+  font: inherit;
+  font-weight: bold;
+
+  border: 1px solid orange;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario-contato button:hover {
+  background-color: transparent;
+  color: orange;
+}
